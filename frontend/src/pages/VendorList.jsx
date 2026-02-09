@@ -6,7 +6,7 @@ export default function VendorList() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
+  useEffect(() => {    
     fetchVendors();
   }, []);
 
