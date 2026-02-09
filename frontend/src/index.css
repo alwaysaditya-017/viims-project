@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base Layer (Global Defaults) ---------- */
+@layer base {
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  body {
+    @apply bg-slate-100 text-slate-800 antialiased;
+  }
+}
+
+/* ---------- Component Layer (Reusable UI) ---------- */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center rounded-lg bg-indigo-600 px-4 py-2
+           text-sm font-medium text-white shadow
+           hover:bg-indigo-700 focus:outline-none focus:ring-2
+           focus:ring-indigo-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply rounded-xl bg-white p-6 shadow-md;
+  }
+}
+
+/* ---------- Utility Extensions ---------- */
+@layer utilities {
+  .text-muted {
+    @apply text-slate-500;
+  }
+}
