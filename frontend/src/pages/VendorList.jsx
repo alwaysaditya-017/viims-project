@@ -107,4 +107,4 @@ export default function VendorList() {
       </div>
     </div>
   );
-}
+} 
