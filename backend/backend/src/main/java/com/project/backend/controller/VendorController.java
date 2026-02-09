@@ -23,6 +23,6 @@ public class VendorController {
 	
 	@GetMapping("/list")
 	public ResponseEntity<List<VendorRequestDto>> getAllVendor(){
-		return ResponseEntity.ok(vendorService.fetchVendorList());
+		return ResponseEntity.ok(vendorService.fetchVendorList()); 
 	}
 }
