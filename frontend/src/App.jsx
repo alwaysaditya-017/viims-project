@@ -1,14 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import VendorList from "./pages/vendorList";
+import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
 
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<VendorList />} />
+
+        {/* Layout wrapper */}
+        <Route element={<Layout />}>
+          <Route path="/" element={<Dashboard />} />
+        </Route>
+
       </Routes>
     </BrowserRouter>
   );
 }
-
